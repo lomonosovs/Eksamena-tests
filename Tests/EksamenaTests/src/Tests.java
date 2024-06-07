@@ -49,3 +49,13 @@ public class Tests {
         }
         System.out.println("jus atbildejat pareizi ar pirmo reizi uz " + pareizasPirmoReiziSkaits + " jautajumiem.");
     }
+    private static List<Jautajums> izveidotJautajumus() {
+        List<Jautajums> jautajumi = new ArrayList<>();
+        jautajumi.add(new Jautajums(
+                "Kuras ir matematikas funkcijas?",
+                new String[]{"Math.max()", "Math.sqrt()", "Math.saskaitit()", "Math.abs()"},
+                new HashSet<>(Arrays.asList(1, 2, 4))
+        ));
+        return jautajumi;
+    }
+}
