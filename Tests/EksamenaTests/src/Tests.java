@@ -56,6 +56,31 @@ public class Tests {
                 new String[]{"Math.max()", "Math.sqrt()", "Math.saskaitit()", "Math.abs()"},
                 new HashSet<>(Arrays.asList(1, 2, 4))
         ));
+        jautajumi.add(new Jautajums(
+                "Kuras funkcijas izmanto skaitlu parversanai uz tekstu?",
+                new String[]{"Integer.toString()", "Double.toString()", "Math.sqrt()", "Math.pow()"},
+                new HashSet<>(Arrays.asList(1, 2))
+        ));
+        jautajumi.add(new Jautajums(
+                "Kuras funkcijas izmanto, lai iegutu lielako un mazako vertibu?",
+                new String[]{"Math.max()", "Math.abs()", "Math.sqrt()", "Math.min"},
+                new HashSet<>(Arrays.asList(1, 4))
+        ));
+        jautajumi.add(new Jautajums(
+                "Kuras funkcijas aprekina skaitli pakape un skaitla kvadrat sakni?",
+                new String[]{"Math.min()", "Math.sqrt()", "Math.max()", "Math.pow()"},
+                new HashSet<>(Arrays.asList(2, 4))
+        ));
+        jautajumi.add(new Jautajums(
+                "Kur ir pareizi uzrakstits Random panemiens",
+                new String[]{"Random rand = new Random();", "Random peppa = new Random();", "Randon rand = new Ramdon();", "Random rand = new Random"},
+                new HashSet<>(Arrays.asList(1, 2))
+        ));
+        jautajumi.add(new Jautajums(
+                "Kuras funkcijas izmanto lai aprekinatu absoluto vertibu un skaitlu noapalosanu",
+                new String[]{"Math.abs()", "Math.min()", "Math.round()", "Math.max()"},
+                new HashSet<>(Arrays.asList(1, 3))
+        ));
         return jautajumi;
     }
 }
