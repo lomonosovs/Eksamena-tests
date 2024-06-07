@@ -81,6 +81,26 @@ public class Tests {
                 new String[]{"Math.abs()", "Math.min()", "Math.round()", "Math.max()"},
                 new HashSet<>(Arrays.asList(1, 3))
         ));
+        jautajumi.add(new Jautajums(
+                "Kur ir pareizi uzrakstits Math.abs panemiens?",
+                new String[]{"int y = Math.abs(-16);", "String y = Math.abs(-16)", "double y = Math.abs(-16);","int y = Math.abs(-16)"},
+                new HashSet<>(Arrays.asList(1, 3))
+        ));
+        jautajumi.add(new Jautajums(
+                "Kur ir pareizi uzrakstits Math.sqrt panemiens?",
+                new String[]{"double y = Math.sqrt(16);", "double x = Math.sqrt(16);", "int y = Math.abs(16);", "double y = Math.sqrt(16)"},
+                new HashSet<>(Arrays.asList(1, 2))
+        ));
+        jautajumi.add(new Jautajums(
+                "Kuras fukcijas izmanto lai parveidotu tekstu uz skaitli?",
+                new String[]{"Integer.parseInt()", "Math.parseInt()", "Double.parseDouble()", "Int.parseMath()"},
+                new HashSet<>(Arrays.asList(1, 3))
+        ));
+        jautajumi.add(new Jautajums(
+                "Kuras funkcijas NAV matematiskas",
+                new String[]{"Math.max()", "Math.aprekinat()", "Math.saskaitit()", "Math.atnemt()"},
+                new HashSet<>(Arrays.asList(2, 3, 4))
+        ));
         return jautajumi;
     }
 }
